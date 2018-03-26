@@ -1,0 +1,261 @@
+{
+  "projects":[
+  {
+  "name": "Tsnat: Online Electronic Store",
+  "desc": [
+  "Features include search, advanced search of products, category navigation, store details and social network sharing",
+  "MVC architecture, Singleton and Factory design patterns used. SDLC and Agile methodologies followed"
+  ],
+  "projUrl":"http://tsnat-electronicstore.rhcloud.com",
+  "urlType": "Bitbucket",
+  "repUrl": "https://bitbucket.org/jaggi-sg/tsnat/src"
+},
+{
+  "name": "TouchJDE: Java Web IDE",
+  "desc": [
+  "Creating user-specific project workspace, creating/editing Java programs on the browser editor using on-screen touch-based input keyboard",
+  "Compile and execute the program to view the compile time & runtime results on the browser"
+  ],
+  "projUrl":"https://github.com/jaggi-sg/touchJDE",
+  "urlType": "git",
+  "repUrl": "https://github.com/jaggi-sg/touchJDE"
+},
+{
+  "name": "Findbooks: Android App",
+  "desc": [
+  "Scans for nearby bluetooth smart sensors in bookstore to list categories of books",
+  "On category selection, category-specific books returned with location",
+  "Used CC2541 TI sensor tag"
+  ],
+  "projUrl":"https://github.com/jaggi-sg/Findbooks",
+  "urlType": "git",
+  "repUrl": "https://github.com/jaggi-sg/Findbooks"
+},
+{
+  "name": "Chat Room Application",
+  "desc": [
+  "Features included creating a new chat room, chatting across multiple chat rooms by multiple users simultaneously",
+  "Persisting the active chat and viewing it later. Developed separately for client-server and peer2peer architectures",
+  "Socket programming and multi-threading were used"
+  ],
+  "projUrl":"https://github.com/suni619/CentralizedChatRoom",
+  "urlType": "git",
+  "repUrl": "https://github.com/suni619/CentralizedChatRoom"
+},
+{
+  "name": "Public Health Care Surveillance Web Application",
+  "desc": [
+  "Public health survey input",
+  "Derive useful location-based and time-based health indicators from the survey",
+  "Depict nutrition habits, obesity levels, accident rate change, tobacco/alcohol users, mortality rate etc changes over the years"
+  ],
+  "projUrl":"https://github.com/jaggi-sg/UTAHealthSurvey",
+  "urlType": "git",
+  "repUrl": "https://github.com/jaggi-sg/UTAHealthSurvey"
+},
+
+{
+  "name": "Web Application for investigation of hospital admission cases",
+  "desc": [
+  "Healthcare decision making by calculating deviation ratio & absolute difference",
+  "Feature selection for the prediction of discharge destination from the dataset using Weka API",
+  "Association rule mining for clinical decision support systems"
+  ],
+  "projUrl":"https://github.com/jaggi-sg/UTAHospital-InvestigationCases",
+  "urlType": "git",
+  "repUrl": "https://github.com/jaggi-sg/UTAHospital-InvestigationCases"
+}
+],
+
+"webProjs":
+     [
+      {
+        "image": "images/apps/ebay-app.png",
+        "name":"Ebay",
+        "link":"http://omega.uta.edu/~jxs0680/cart-ebay/buy.php"
+      },
+      {
+        "image": "images/apps/zillow-app.png",
+        "name":"Zillow",
+        "link":"http://omega.uta.edu/~jxs0680/maps-zillow/map.html"
+      },
+      {
+        "image": "images/apps/lastfm-app.png",
+        "name":"LastFm",
+        "link":"http://omega.uta.edu/~jxs0680/music-lastfm/music.html"
+      },
+      {
+        "image": "images/apps/msgboard-app.png",
+        "name":"Message Board",
+        "link":"http://omega.uta.edu/~jxs0680/msg-board/board.php"
+        },
+        {
+          "image": "images/apps/dropbox-app.png",
+        "name":"Dropbox",
+        "link":"http://omega.uta.edu/~jxs0680/photo-dropbox/album.php"
+        },
+        {
+          "image": "images/apps/tsnat-app.png",
+        "name":"Tsnat - Electronic Store",
+        "link":"http://tsnat-electronicstore.rhcloud.com/"
+        }
+
+    ],
+
+  "cloudProjs":
+      [
+        {
+          "type" : "Amazon Web Services",
+          "name" : "S3, RDS , Memcached monitor on Earthquake data",
+          "url" : "https://bitbucket.org/jaggi-sg/cloud-computing-projects/src/6c990287482a660745711630138b2ea28584f28a/AWS%20-%20S3%20and%20RDS/?at=master"
+        },
+        {
+          "type" : "",
+          "name" : "Scalability on Elasticbeanstalk application",
+          "url" : "https://bitbucket.org/jaggi-sg/cloud-computing-projects/src/6c990287482a660745711630138b2ea28584f28a/AWS%20-%20Scalability/?at=master"
+        },
+        {
+          "type" : "Big Data/ML",
+          "name" : "Hadoop processing, Clustering and Visualization on NCDC data",
+          "url" : "https://bitbucket.org/jaggi-sg/cloud-computing-projects/src/6c990287482a660745711630138b2ea28584f28a/ML%20and%20Hadoop%20on%20NCDC%20data/?at=master"
+        },
+        {
+          "type" : "Google App Engine",
+          "name" : "Storage and Data Store Monitor on NCDC data",
+          "url" : "https://bitbucket.org/jaggi-sg/cloud-computing-projects/src/6c990287482a660745711630138b2ea28584f28a/Google%20App%20Engine%20-%20Storage%20and%20DataStore/?at=master"
+        }
+      ] ,
+
+      "social" :
+        [
+          {
+            "img" : "images/social/linkedin.ico",
+            "link" : "https://www.linkedin.com/in/jagadishshivanna",
+            "type" : "Linkedin",
+            "icon" : "linkedin",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/twitter.ico",
+            "link" : "https://twitter.com/jaggi_sg",
+            "type" : "Twitter",
+            "icon" : "twitter",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/github.ico",
+            "link" : "https://github.com/jaggi-sg",
+            "type" : "Github",
+            "icon" : "github",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/facebook.ico",
+            "link" : "https://facebook.com/jaggi.sg",
+            "type" : "Facebook",
+            "icon" : "facebook",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/instagram.ico",
+            "link" : "https://instagram.com/jaggi_sg",
+            "type" : "Instagram",
+            "icon" : "instagram",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/youtube.ico",
+            "link" : "https://www.youtube.com/user/jagadish030",
+            "type" : "Youtube",
+            "icon" : "youtube",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/skype.ico",
+            "link" : "skype:jaggi.sg11",
+            "type" : "Skype",
+            "icon" : "skype",
+            "homeCond" : "true"
+          }
+        ],
+
+
+        "skills" :
+          [
+            {
+            "type": "Programming Languages",
+            "proficiency" :
+              [
+                {
+                  "level" : "Advanced",
+                  "skillsets" : ["Java"]
+                },
+                {
+                  "level" : "Intermediate",
+                  "skillsets" : ["Python", "C#"]
+                },
+                {
+                  "level" : "Beginner",
+                  "skillsets" : ["C", "C++"]
+                }
+              ]
+            },
+            {
+            "type" : "Web",
+            "proficiency":
+                [
+                {
+                  "level" : "Advanced",
+                  "skillsets" : ["HTML5","CSS3","Javascript","jQuery","JSP","AngularJS"]
+                },
+                {
+                  "level" : "Intermediate",
+                  "skillsets" : ["PHP", "Ajax"]
+                },
+                {
+                  "level" : "Beginner",
+                  "skillsets" : ["Node.js"]
+                }
+              ]
+            },
+            {
+            "type" : "Databases",
+            "proficiency":
+                [
+                {
+                  "level" : "Advanced",
+                  "skillsets" : ["MongoDB","MySQL","Oracle"]
+                },
+                {
+                  "level" : "Intermediate",
+                  "skillsets" : ["NoSQL (dynamoDB)"]
+                },
+                {
+                  "level" : "Beginner",
+                  "skillsets" : []
+                }
+              ]
+              },
+          {
+          "type" : "Others",
+          "proficiency":
+          [
+                {
+                  "level" : "Advanced",
+                  "skillsets" : ["Apache Spark","Spring","Microservices","Docker", "Amazon Web Services (AWS) - EC2,S3,ELK,CloudFormation,Lambda","REST/SOAP"]
+                },
+                {
+                  "level" : "Intermediate",
+                  "skillsets" : ["Kafka","Consul","Swings", "Google Cloud (GAE)", "Android","Salesforce.com", "Apex", "Visualforce"]
+                },
+                {
+                  "level" : "Beginner",
+                  "skillsets" : ["Hadoop","XML","Hibernate", "PL/SQL"]
+                }
+              ]
+          }
+      ]
+
+
+
+}
