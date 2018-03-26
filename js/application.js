@@ -98,8 +98,8 @@ portfolioApp.controller('profileCtrl', ['$scope', '$http', function($scope, $htt
     	name: "Jagadish Shivanna",
     	phone: "+1-682-582-3836",
     	email: "jagadish030@gmail.com",
-    	place: "Arlington, TX",
-    	linkedin: "www.linkedin.com/in/jagadishshivanna",
+    	place: "Richmond, VA",
+    	linkedin: "www.linkedin.com/in/jaggisg",
     	skype: "jaggi.sg11"
     };
 
