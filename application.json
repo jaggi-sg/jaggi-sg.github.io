@@ -66,6 +66,7 @@
 		}
 	],
 
+<<<<<<< HEAD
 	"webProjs": [{
 			"image": "images/apps/ebay-app.png",
 			"name": "Ebay",
@@ -96,6 +97,60 @@
 			"name": "Tsnat - Electronic Store",
 			"link": "http://tsnat-electronicstore.rhcloud.com/"
 		}
+=======
+      "social" :
+        [
+          {
+            "img" : "images/social/linkedin.ico",
+            "link" : "https://www.linkedin.com/in/jaggisg",
+            "type" : "Linkedin",
+            "icon" : "linkedin",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/twitter.ico",
+            "link" : "https://twitter.com/jaggi_sg",
+            "type" : "Twitter",
+            "icon" : "twitter",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/github.ico",
+            "link" : "https://github.com/jaggi-sg",
+            "type" : "Github",
+            "icon" : "github",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/facebook.ico",
+            "link" : "https://facebook.com/jaggi.sg",
+            "type" : "Facebook",
+            "icon" : "facebook",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/instagram.ico",
+            "link" : "https://instagram.com/jaggi_sg",
+            "type" : "Instagram",
+            "icon" : "instagram",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/youtube.ico",
+            "link" : "https://www.youtube.com/user/jagadish030",
+            "type" : "Youtube",
+            "icon" : "youtube",
+            "homeCond" : "true"
+          },
+          {
+            "img" : "images/social/skype.ico",
+            "link" : "skype:jaggi.sg11",
+            "type" : "Skype",
+            "icon" : "skype",
+            "homeCond" : "true"
+          }
+        ],
+>>>>>>> 4060d81bfca67722444cb84a8eba39a20069d1ea
 
 	],
 
