@@ -6,10 +6,14 @@
 <title>Jagadish Shivanna</title>
 <link rel="icon" type="image/icon" href="images/icon.ico">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
 <!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css"> -->
-<link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Overlock'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <!-- load angularjs module -->
 <script src="js/angular.min.js"></script>
@@ -20,13 +24,15 @@
 <!-- load up our app -->
 </head>
 
-<body scroll data-spy="scroll" data-target=".navbar" data-offset="10" ng-controller="profileCtrl" ng-cloak>
+<body scroll data-spy="scroll" data-target=".navbar" data-offset="10"
+	ng-controller="profileCtrl" ng-cloak>
 
-<!-- Static navbar -->
-<header>
-<nav class="navbar navbar-default navbar-fixed-top navFirst" ng-class="{navScroll:boolNav}">
-      <div class="container-fluid">
-      <!-- <div class="navbar-header">
+	<!-- Static navbar -->
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top navFirst"
+			ng-class="{navScroll:boolNav}">
+			<div class="container-fluid">
+				<!-- <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -35,255 +41,359 @@
       </button>
       <a class="navbar-brand" href="#">Brand</a> </div> -->
 
-          <ul class="nav navbar-nav" id="menuNav">
-            <!-- <span>JAGGI</span> -->
-            <li ng-repeat="menu in navMenu" ng-class="{active:activeMenu === menu.clickLocation}">
-              <a href="{{menu.clickLocation}}" ng-click="gotoMenu(menu.clickLocation, $event)">{{menu.menuName}}</a>
-            </li>
-          </ul>
-        <!--/.nav-collapse -->
-      </div>
-    </nav>
-</header>
+				<ul class="nav navbar-nav" id="menuNav">
+					<!-- <span>JAGGI</span> -->
+					<li ng-repeat="menu in navMenu"
+						ng-class="{active:activeMenu === menu.clickLocation}"><a
+						href="{{menu.clickLocation}}"
+						ng-click="gotoMenu(menu.clickLocation, $event)">{{menu.menuName}}</a>
+					</li>
+				</ul>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+	</header>
 
-<!-- HOME Section -->
-    <div class="row section" id="home">
-      <div class="container">
-        <div class="row homeCenter">
-      <div class="col-md-3">
-          <img src="images/profile.JPG" id="profileImage" class="img-thumbnail" alt="Jagadish Shivanna Profile Image">
-      </div>
-      <div class="col-md-7">
-        <!-- <ul>
+	<!-- HOME Section -->
+	<div class="row section" id="home">
+		<div class="container">
+			<div class="row homeCenter">
+				<div class="col-md-3">
+					<img src="images/profile.JPG" id="profileImage"
+						class="img-thumbnail" alt="Jagadish Shivanna Profile Image">
+				</div>
+				<div class="col-md-7">
+					<!-- <ul>
           <li ng-repeat="detail in details"></li>
         </ul> -->
-        <div id="homeMain">
-          <p>JAGADISH SHIVANNA</p>
-          <div><i class="fa fa-home fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;{{livesin}}</div>
-          <div style="font-size:large">Software Developer | Computer Science Masters Graduate</div>
-        </div>
-        </div>
-      </div>
-      <div><br/><br/></div>
-      <div>
-        <div id="homeDetails">
-           <div id="iconsHolder"><hr>
-            <div ng-repeat="icons in social" class="homeIcons">
-              <a href="{{icons.link}}" target="_blank"><i class="fa fa-{{icons.icon}}" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div><br/><br/></div>
-          <a ng-click="gotoMenu('#about')" id="homeEnd"><i class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i></a>
-        </div>
-      </div>
-      </div>
-    </div>
+					<div id="homeMain">
+						<p>JAGADISH SHIVANNA</p>
+						<div>
+							<i class="fa fa-home fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;{{livesin}}
+						</div>
+						<div style="font-size: large">Software Developer | Computer
+							Science Masters Graduate</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<br />
+				<br />
+			</div>
+			<div>
+				<div id="homeDetails">
+					<div id="iconsHolder">
+						<hr>
+						<div ng-repeat="icons in social" class="homeIcons">
+							<a href="{{icons.link}}" target="_blank"><i
+								class="fa fa-{{icons.icon}}" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div>
+						<br />
+						<br />
+					</div>
+					<a ng-click="gotoMenu('#about')" id="homeEnd"><i
+						class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-<!-- About Me Section -->
-   <div class="row section" id="about">
+	<!-- About Me Section -->
+	<div class="row section" id="about">
 
-      <div class="container">
-        <h2><span>ABOUT<span></h2>
-        <div><br><br></div>
-        <div class="col-md-3" id="aboutNow">
-          <p><i class="fa fa-home fa-lg" aria-hidden="true"></i>&emsp;<b>From: </b>{{home}}</p>
-          <p><i class="fa fa-building fa-lg" aria-hidden="true"></i>&emsp;<b>Lives in: </b>{{livesin}}</p>
-          <p><i class="fa fa-search fa-lg" aria-hidden="true"></i>&emsp;{{aboutCurrent}}</p>
-        </div>
-        <div class="col-md-7" id="aboutDetails">
-          <p>{{aboutDetails}}</p>
-        </div>
-        <div class="col-md-2" id="aboutMe">
-          <div>
-            <a href="{{resume}}" class="btn btn-primary" target="_blank" download>Download Resume</a>
-          </div>
-          <div><br/></div>
-          <div>
-            <a href="{{resume}}" class="btn btn-primary" target="_blank">View Resume</a>
-          </div>
-        </div>
-        </div>
-      </div>
-   </div>
-
-
-<!-- Education Section -->
-    <div class="row section" id="education">
-     <div class="container">
-      <h2><span>EDUCATION</span></h2>
-      <div><br><br></div>
-        <table id="eduDetails" class="table-striped">
-          <tr ng-repeat-start="edu in eduMenu">
-            <td>
-              <p><b>{{edu.degree}} in {{edu.major}}</b></p>
-              <p>{{edu.university}}</p>
-              <p>{{edu.place}}</p>
-            </td>
-            <td>
-              <p><span>{{edu.yearFrom}} - </span><span>{{edu.yearTo}}</span></p>
-              <p>CGPA: {{edu.gpa}}</p><br/>
-            </td>
-            <td><div class="btn btn-danger" ng-click="gotoCourse(edu.degree)">{{edu.degree}} Courses</div></td>
-            <!-- <td><span ng-repeat="n in ugCourses">{{n}}</span></td> -->
-          </tr>
-          <tr ng-repeat-end></tr>
-        </table>
-        <br/><br/>
-    <div id="courses">
-      <p ng-show>Relevant Courses</p>
-      <p ng-repeat="p in courses" id="pgcourse">{{p}}</p>
-    </div>
-    </div>
-  </div>
-<!-- End Education Section -->
+		<div class="container">
+			<h2>
+				<span>ABOUT<span>
+			</h2>
+			<div>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-3" id="aboutNow">
+				<p>
+					<i class="fa fa-home fa-lg" aria-hidden="true"></i>&emsp;<b>From:
+					</b>{{home}}
+				</p>
+				<p>
+					<i class="fa fa-building fa-lg" aria-hidden="true"></i>&emsp;<b>Lives
+						in: </b>{{livesin}}
+				</p>
+				<p>
+					<i class="fa fa-search fa-lg" aria-hidden="true"></i>&emsp;{{aboutCurrent}}
+				</p>
+			</div>
+			<div class="col-md-7" id="aboutDetails">
+				<p>{{aboutDetails}}</p>
+			</div>
+			<div class="col-md-2" id="aboutMe">
+				<div>
+					<a href="{{resume}}" class="btn btn-primary" target="_blank"
+						download>Download Resume</a>
+				</div>
+				<div>
+					<br />
+				</div>
+				<div>
+					<a href="{{resume}}" class="btn btn-primary" target="_blank">View
+						Resume</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 
 
-<!-- Experience Section -->
-   <div class="row section" id="experience">
-    <div class="container">
-    <h2><span>EXPERIENCE</span></h2>
-    <div><br><br></div>
-      <div ng-repeat="exp in experience">
-        <table class="table" id="expDetails">
-          <tr>
-            <th rowspan="2">{{exp.no}}</th>
-            <td>{{exp.company}}</td>
-            <td>{{exp.place}}</td>
-          </tr>
-          <tr>
-            <td>{{exp.role}}</td>
-            <td>{{exp.from}} - {{exp.to}}</td>
-          <tr>
-        </table><br/>
-          <ul id="expDesc">
-            <li>{{exp.responsibilities}}</li>
-            <li ng-if="exp.team!=0">Clients:
-              <div ng-repeat="teams in exp.team" ng-if="exp.team!=0">{{teams}}</div>
-            </li>
-            <li ng-repeat="description in exp.desc" ng-if="exp.desc!=0">
-                {{description}}
-            </li>
-          </ul><br/><hr>
-      </div>
-    </div>
-   </div>
-
-    <!-- Skills Section -->
-    <div class="row section" id="skills">
-      <div class="container">
-      <h2><span>SKILLS</span></h2>
-      <div><br><br></div>
-      <div class="skillsPlace">
-        <div class="container-fluid" ng-repeat="skill in skills">
-          <p class="skillType">{{skill.type}}</p>
-            <div ng-repeat-start="s in skill.proficiency" class="col-md-3 setsPlace">
-              <p>{{s.level}}</p>
-            </div>
-        <div class="col-md-9 setsPlace">
-          <span ng-repeat="sets in s.skillsets" class="skillSets">{{sets}}&emsp;</span>
-        </div>
-         <div ng-repeat-end></div>
-      </div>
-    </div>
-    </div>
-    </div>
-    <!-- Skills Section End-->
+	<!-- Education Section -->
+	<div class="row section" id="education">
+		<div class="container">
+			<h2>
+				<span>EDUCATION</span>
+			</h2>
+			<div>
+				<br>
+				<br>
+			</div>
+			<table id="eduDetails" class="table-striped">
+				<tr ng-repeat-start="edu in eduMenu">
+					<td>
+						<p>
+							<b>{{edu.degree}} in {{edu.major}}</b>
+						</p>
+						<p>{{edu.university}}</p>
+						<p>{{edu.place}}</p>
+					</td>
+					<td>
+						<p>
+							<span>{{edu.yearFrom}} - </span><span>{{edu.yearTo}}</span>
+						</p>
+						<p>CGPA: {{edu.gpa}}</p>
+						<br />
+					</td>
+					<td><div class="btn btn-danger"
+							ng-click="gotoCourse(edu.degree)">{{edu.degree}} Courses</div></td>
+					<!-- <td><span ng-repeat="n in ugCourses">{{n}}</span></td> -->
+				</tr>
+				<tr ng-repeat-end></tr>
+			</table>
+			<br />
+			<br />
+			<div id="courses">
+				<p ng-show>Relevant Courses</p>
+				<p ng-repeat="p in courses" id="pgcourse">{{p}}</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Education Section -->
 
 
-<!-- Projects Section -->
-  <div class="row section" id="projects">
-    <div class="container">
-    <h2><span>PROJECTS</span></h2>
-    <div><br><br></div>
-    <div class="card-columns" id="cardsColumn">
-      <div class="card card-block" ng-repeat="projs in projects" id="card">
-        <a href="{{projs.projUrl}}" target="_blank"><div><h4 class="card-title">{{projs.name}}</h4></div></a>
+	<!-- Experience Section -->
+	<div class="row section" id="experience">
+		<div class="container">
+			<h2>
+				<span>EXPERIENCE</span>
+			</h2>
+			<div>
+				<br>
+				<br>
+			</div>
+			<div ng-repeat="exp in experience">
+				<table class="table" id="expDetails">
+					<tr>
+						<th rowspan="2">{{exp.no}}</th>
+						<td>{{exp.company}}</td>
+						<td>{{exp.place}}</td>
+					</tr>
+					<tr>
+						<td>{{exp.role}}</td>
+						<td>{{exp.from}} - {{exp.to}}</td>
+					<tr>
+				</table>
+				<br />
+				<ul id="expDesc">
+					<li>{{exp.responsibilities}}</li>
+					<li ng-if="exp.team!=0">Clients:
+						<div ng-repeat="teams in exp.team" ng-if="exp.team!=0">{{teams}}</div>
+					</li>
+					<li ng-repeat="description in exp.desc" ng-if="exp.desc!=0">
+						{{description}}</li>
+				</ul>
+				<br />
+				<hr>
+			</div>
+		</div>
+	</div>
 
-            <ul class="card-text" id="cardsText">
-              <li ng-repeat="desc in projs.desc"><span>{{desc}}</span></li>
-            </ul>
+	<!-- Skills Section -->
+	<div class="row section" id="skills">
+		<div class="container">
+			<h2>
+				<span>SKILLS</span>
+			</h2>
+			<div>
+				<br>
+				<br>
+			</div>
+			<div class="skillsPlace">
+				<div class="container-fluid" ng-repeat="skill in skills">
+					<p class="skillType">{{skill.type}}</p>
+					<div ng-repeat-start="s in skill.proficiency"
+						class="col-md-3 setsPlace">
+						<p>{{s.level}}</p>
+					</div>
+					<div class="col-md-9 setsPlace">
+						<span ng-repeat="sets in s.skillsets" class="skillSets">{{sets}}&nbsp;</span>
+					</div>
+					<div ng-repeat-end></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Skills Section End-->
 
-        <a href="{{projs.repUrl}}" class="btn btn-primary" target="_blank">View in {{projs.urlType}}</a>
-      </div>
 
-      <div class="card card-block" id="cardWeb">
-        <a href="{{webProjUrl}}" target="_blank"><div class="cardTitle"><h4 class="card-title">Web Application Projects</h4></div></a>
-        <div class="card-text">
-          <div ng-repeat="web in webProjs" id="imagesHolder">
-            <a href="{{web.link}}" target="_blank">
-              <img ng-src="{{web.image}}" class="webProjs"/>
-              <span>{{web.name}}</span>
-            </a>
-          </div>
-        </div>
-        <a href="{{webProjUrl}}" class="btn btn-primary" target="_blank">View in Bitbucket</a>
-      </div>
+	<!-- Projects Section -->
+	<div class="row section" id="projects">
+		<div class="container">
+			<h2>
+				<span>PROJECTS</span>
+			</h2>
+			<div>
+				<br>
+				<br>
+			</div>
+			<div class="card-columns" id="cardsColumn">
+				<div class="card card-block" ng-repeat="projs in projects" id="card">
+					<a href="{{projs.projUrl}}" target="_blank"><div>
+							<h4 class="card-title">{{projs.name}}</h4>
+						</div></a>
 
-      <div class="card card-block" id="cardCloud">
-        <a href="{{cloudProjUrl}}" target="_blank"><div class="cardTitle"><h4 class="card-title">Cloud Computing Projects</h4></div></a>
-        <div class="card-text">
-          <div ng-repeat="cloud in cloudProjs">
-            <h5>{{cloud.type}}</h5>
-            <ul><a href="{{cloud.url}}" target="_blank"><li>{{cloud.name}}</li></a></ul>
-          </div>
-        </div>
-        <a href="{{cloudProjUrl}}" class="btn btn-primary" target="_blank">View in Bitbucket</a>
-      </div>
+					<ul class="card-text" id="cardsText">
+						<li ng-repeat="desc in projs.desc"><span>{{desc}}</span></li>
+					</ul>
 
-    </div>
-    </div>
-  </div>
+					<a href="{{projs.repUrl}}" class="btn btn-primary" target="_blank">View
+						in {{projs.urlType}}</a>
+				</div>
 
-<!-- Contact Section -->
-    <div class="row section" id="contact">
-      <div class="container">
-      <h2><span>CONTACT</span></h2>
-      <div><br><br></div>
-       <div class="col-md-5" id="contactDetails">
-        <p><i class="fa fa-user fa-lg" aria-hidden="true"></i>&emsp;{{contact.name}}</p>
-        <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>&emsp;{{contact.email}}</p>
-        <p><i class="fa fa-mobile-phone fa-lg" aria-hidden="true"></i>&emsp;{{contact.phone}}</p>
-        <p><i class="fa fa-home fa-lg" aria-hidden="true"></i>&emsp;{{contact.place}}</p>
-        <p><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>&emsp;<a href="{{contact.linkedin}}">Linkedin</a></p>
-        <p><i class="fa fa-skype fa-lg" aria-hidden="true"></i>&emsp;<a href="skype:{{contact.skype}}">{{contact.skype}}</a></p>
-       </div>
-        <div class="col-md-7">
-          <h3><span>Lets Connect!!</span></h3>
-          <div id="iconsHolder">
-            <div ng-repeat="icons in social">
-              <div><a href="{{icons.link}}" target="_blank"><img ng-src="{{icons.img}}" class="iconsimg"/></a></div>
-              <div><b>{{icons.type}}</b></div>
-            </div>
-          </div>
-        </div>
-        </div>
-    </div>
+				<div class="card card-block" id="cardWeb">
+					<a href="{{webProjUrl}}" target="_blank"><div class="cardTitle">
+							<h4 class="card-title">Web Application Projects</h4>
+						</div></a>
+					<div class="card-text">
+						<div ng-repeat="web in webProjs" id="imagesHolder">
+							<a href="{{web.link}}" target="_blank"> <img
+								ng-src="{{web.image}}" class="webProjs" /> <span>{{web.name}}</span>
+							</a>
+						</div>
+					</div>
+					<a href="{{webProjUrl}}" class="btn btn-primary" target="_blank">View
+						in Bitbucket</a>
+				</div>
 
- <div class="row end">
-   <a ng-click="gotoMenu('#home')"><i class="fa fa-chevron-circle-up fa-3x" aria-hidden="true"></i></a>
- </div>
+				<div class="card card-block" id="cardCloud">
+					<a href="{{cloudProjUrl}}" target="_blank"><div
+							class="cardTitle">
+							<h4 class="card-title">Cloud Computing Projects</h4>
+						</div></a>
+					<div class="card-text">
+						<div ng-repeat="cloud in cloudProjs">
+							<h5>{{cloud.type}}</h5>
+							<ul>
+								<a href="{{cloud.url}}" target="_blank"><li>{{cloud.name}}</li></a>
+							</ul>
+						</div>
+					</div>
+					<a href="{{cloudProjUrl}}" class="btn btn-primary" target="_blank">View
+						in Bitbucket</a>
+				</div>
 
-<!-- content is injected here -->
-<div ng-view></div>
-<!-- /container -->
-<footer>
-  <div><br/></div>
-  <div>
-    <div>2016&nbsp;&#169;&nbsp;jagadish030@gmail.com</div>
-  </div>
-  <div id="share">
-    <span>Share</span>
-    <span> <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check Jagadish Shivanna's page on github - " data-via="jaggi_sg" data-related="jaggi_sg">Tweet</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> </span>
+			</div>
+		</div>
+	</div>
 
-  <span><a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="en"></a>
-<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></span>
+	<!-- Contact Section -->
+	<div class="row section" id="contact">
+		<div class="container">
+			<h2>
+				<span>CONTACT</span>
+			</h2>
+			<div>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-5" id="contactDetails">
+				<p>
+					<i class="fa fa-user fa-lg" aria-hidden="true"></i>&emsp;{{contact.name}}
+				</p>
+				<p>
+					<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>&emsp;{{contact.email}}
+				</p>
+				<p>
+					<i class="fa fa-mobile-phone fa-lg" aria-hidden="true"></i>&emsp;{{contact.phone}}
+				</p>
+				<p>
+					<i class="fa fa-home fa-lg" aria-hidden="true"></i>&emsp;{{contact.place}}
+				</p>
+				<p>
+					<i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>&emsp;<a
+						href="{{contact.linkedin}}">Linkedin</a>
+				</p>
+				<p>
+					<i class="fa fa-skype fa-lg" aria-hidden="true"></i>&emsp;<a
+						href="skype:{{contact.skype}}">{{contact.skype}}</a>
+				</p>
+			</div>
+			<div class="col-md-7">
+				<h3>
+					<span>Lets Connect!!</span>
+				</h3>
+				<div id="iconsHolder">
+					<div ng-repeat="icons in social">
+						<div>
+							<a href="{{icons.link}}" target="_blank"><img
+								ng-src="{{icons.img}}" class="iconsimg" /></a>
+						</div>
+						<div>
+							<b>{{icons.type}}</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<span>
-<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share" data-url="http://jaggi-sg.github.io"></script></span> </div>
+	<div class="row end">
+		<a ng-click="gotoMenu('#home')"><i
+			class="fa fa-chevron-circle-up fa-3x" aria-hidden="true"></i></a>
+	</div>
 
-</footer>
+	<!-- content is injected here -->
+	<div ng-view></div>
+	<!-- /container -->
+	<footer>
+		<div>
+			<br />
+		</div>
+		<div>
+			<div>2016&nbsp;&#169;&nbsp;jagadish030@gmail.com</div>
+		</div>
+		<div id="share">
+			<span>Share</span> <span> <a href="https://twitter.com/share"
+				class="twitter-share-button"
+				data-text="Check Jagadish Shivanna's page on github - "
+				data-via="jaggi_sg" data-related="jaggi_sg">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</span> <span><a data-pocket-label="pocket" data-pocket-count="none"
+				class="pocket-btn" data-lang="en"></a> <script
+					type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></span>
+
+			<span> <script src="//platform.linkedin.com/in.js"
+					type="text/javascript"> lang: en_US</script> <script
+					type="IN/Share" data-url="http://jaggi-sg.github.io"></script></span>
+		</div>
+
+	</footer>
 </body>
 </html>

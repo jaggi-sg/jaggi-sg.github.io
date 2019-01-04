@@ -6,8 +6,8 @@ body {
 	height: 100%;
 	font-size: medium;
 	font-family: 'Overlock', cursive;
-    /*padding-top: 50px;*/
-  }
+	/*padding-top: 50px;*/
+}
 
 .section {
 	margin: 0 auto;
@@ -15,37 +15,44 @@ body {
 
 .section:nth-of-type(even) {
 	/*background: rgba(21, 226, 132, 0.77);*/
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(left,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
-border-bottom: 10px solid #E2DEDE;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(left, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#ededed', GradientType=1); /* IE6-9 */
+	border-bottom: 10px solid #E2DEDE;
 }
 
 .section:nth-of-type(odd) {
 	/*background: rgba(55, 187, 83, 0.65);*/
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ebf9+0,feffff+100 */
-background: #d2ebf9; /* Old browsers */
-background: -moz-linear-gradient(left,  #d2ebf9 0%, #feffff 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  #d2ebf9 0%,#feffff 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  #d2ebf9 0%,#feffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', endColorstr='#feffff',GradientType=1 ); /* IE6-9 */
-    border-bottom: 10px solid #D2EBF9;
+	background: #d2ebf9; /* Old browsers */
+	background: -moz-linear-gradient(left, #d2ebf9 0%, #feffff 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #d2ebf9 0%, #feffff 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #d2ebf9 0%, #feffff 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9',
+		endColorstr='#feffff', GradientType=1); /* IE6-9 */
+	border-bottom: 10px solid #D2EBF9;
 }
 
 #home {
 	background: url("../images/header.jpg");
 	height: 100vh;
-    text-align: center;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+	text-align: center;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
-
 
 .homeCenter {
 	top: 20vh;
@@ -57,17 +64,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', end
 }
 
 #homeMain p {
-		font-weight: bold;
-    font-size: 3.75em;
-    color: whitesmoke;
-    letter-spacing: 8px;
-    text-shadow: 3px 2px rgb(74, 71, 44);
+	font-weight: bold;
+	font-size: 3.75em;
+	color: whitesmoke;
+	letter-spacing: 8px;
+	text-shadow: 3px 2px rgb(6, 118, 130);
 }
 
 #homeMain div {
 	font-size: 1.75em;
-	/*font-weight: bold;*/
-	color: whitesmoke;
+	font-weight: bold;
+	color: #bee841;
+	background: linear-gradient(to right, rgba(147, 206, 222, 0) 0%,
+		rgba(35, 36, 37, 0.45) 50%, rgb(35, 36, 37, 0.65) 100%);
 }
 
 #homeDetails {
@@ -90,15 +99,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', end
 }
 
 #homeDetails a i:hover {
-    color: rgba(233, 39, 25, 0.9);
+	color: rgba(233, 39, 25, 0.9);
 }
 
 .navFirst {
-	background: transparent;
+	/* background: transparent; */
+	background: linear-gradient(to right, rgba(147, 206, 222, 0) 0%,
+		rgba(35, 36, 37, 0.45) 50%, rgb(35, 36, 37, 0.65) 100%);
 }
 
 .navScroll {
-	background: linear-gradient(to right, #45484d 0%,#000000 100%);
+	background: linear-gradient(to right, #45484d 0%, #000000 100%);
 }
 
 .navScroll ul.nav li a {
@@ -115,18 +126,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', end
 }
 
 #menuNav li {
-    /*padding-left: 25px;
+	/*padding-left: 25px;
     padding-right: 25px;*/
 	float: none;
-    font-weight: bolder;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    /*background: orange;*/
+	font-weight: bolder;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	/*background: orange;*/
 }
 
 .navFirst ul.nav li a {
-	color: rgba(255, 255, 255, 0.87);
+	color: rgb(254, 252, 243);
 	font-size: medium;
 }
 
@@ -143,16 +154,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', end
 #profileImage {
 	height: 33vh;
 	width: 33vh;
-    background-color: rgba(21, 17, 17, 0.65);
-    border: 1px solid transparent;
-    border-radius: 15vh;
+	background-color: rgba(21, 17, 17, 0.65);
+	border: 1px solid transparent;
+	border-radius: 15vh;
 }
 
 #about {
 	margin: 0 auto;
-    width: 100%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+	width: 100%;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
 }
 
 #about .container {
@@ -161,8 +172,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', end
 
 #aboutNow {
 	text-align: center;
-    padding: 10px;
-    top: 1vh;
+	padding: 10px;
+	top: 1vh;
 }
 
 #aboutDetails {
@@ -173,7 +184,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', end
 
 #aboutDetails p {
 	width: 75%;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 #aboutMe {
@@ -183,19 +194,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', end
 
 .section h2 span {
 	border-bottom: 3px solid #11ABB0;
-    padding-bottom: 6px;
+	padding-bottom: 6px;
 }
 
 h3 span {
-    border-bottom: 3px solid #11ABB0;
-    padding-bottom: 6px;
+	border-bottom: 3px solid #11ABB0;
+	padding-bottom: 6px;
 }
 
 #education {
-		margin: 0 auto;
-    width: 100%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
 }
 
 #eduDetails {
@@ -206,7 +217,7 @@ h3 span {
 
 #eduDetails tr {
 	background: rgba(17, 171, 176, 0.49);
-    border: 2px solid rgba(15, 75, 115, 0.78);
+	border: 2px solid rgba(15, 75, 115, 0.78);
 }
 
 #eduDetails td {
@@ -221,62 +232,62 @@ h3 span {
 
 #ugcourse, #pgcourse {
 	background-color: #d9534f;
-    border-color: #d43f3a;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
-    float: left;
+	border-color: #d43f3a;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 5px;
+	float: left;
 }
 
 #projects {
 	padding-top: 10vh;
-    padding-bottom: 10vh;
+	padding-bottom: 10vh;
 	margin: 0 auto;
-    width: 100%;
+	width: 100%;
 }
 
 #contact {
 	padding-top: 10vh;
-    padding-bottom: 10vh;
-    margin: 0 auto;
+	padding-bottom: 10vh;
+	margin: 0 auto;
 }
 
 #card {
 	display: inline-block;
 	margin: 7px;
-    width: 32%;
-    background: #B0F0F7;
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 2px 5px rgba(111, 184, 218, 0.82);
+	width: 32%;
+	background: #B0F0F7;
+	padding: 15px;
+	border-radius: 20px;
+	box-shadow: 2px 5px rgba(111, 184, 218, 0.82);
 }
 
 #cardWeb {
 	display: inline-block;
 	margin: 7px;
 	width: 60rem;
-    background: #B0F0F7;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 5px rgba(111, 184, 218, 0.82);
+	background: #B0F0F7;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 2px 5px rgba(111, 184, 218, 0.82);
 }
 
 #cardCloud {
 	display: inline-block;
 	margin: 7px;
 	width: 40rem;
-    background: #B0F0F7;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 5px rgba(111, 184, 218, 0.82);
+	background: #B0F0F7;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 2px 5px rgba(111, 184, 218, 0.82);
 }
 
 #card div, .cardTitle {
 	background: rgba(142, 226, 234, 0.71);
-    padding: 2px;
-    text-align: center;
-    border-radius: 15px;
-    border: 1px solid rgba(57, 228, 149, 0.91);
+	padding: 2px;
+	text-align: center;
+	border-radius: 15px;
+	border: 1px solid rgba(57, 228, 149, 0.91);
 }
 
 #card div:hover, .cardTitle:hover {
@@ -290,8 +301,8 @@ a:hover {
 #cardsColumn {
 	display: block;
 	margin: 0 auto;
-    /* text-align: center; */
-    width: 95%;
+	/* text-align: center; */
+	width: 95%;
 }
 
 #cardsText {
@@ -305,27 +316,27 @@ a:hover {
 	width: 150px;
 	border: 1px solid #6CD8D2;
 	position: relative;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);
+	-webkit-transition: all 200ms ease-in;
+	-webkit-transform: scale(1);
+	-ms-transition: all 200ms ease-in;
+	-ms-transform: scale(1);
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1);
+	transition: all 200ms ease-in;
+	transform: scale(1);
 }
 
 .webProjs:hover {
 	box-shadow: 0px 0px 50px rgba(10, 132, 171, 0.85);
-    z-index: 1;
-    -webkit-transition: all 300ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 300ms ease-in;
-    -ms-transform: scale(1.5);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 300ms ease-in;
-    transform: scale(1.2);
+	z-index: 1;
+	-webkit-transition: all 300ms ease-in;
+	-webkit-transform: scale(1.5);
+	-ms-transition: all 300ms ease-in;
+	-ms-transform: scale(1.5);
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1.5);
+	transition: all 300ms ease-in;
+	transform: scale(1.2);
 }
 
 #imagesHolder {
@@ -338,17 +349,17 @@ a:hover {
 }
 
 #imagesHolder span {
-    position: absolute;
-    left: 0;
-    text-align: center;
-    bottom: 0;
-    font-weight: bold;
-    color: rgba(7, 23, 35, 0.82);
-    background: rgba(176, 240, 247, 0.85);
-    width: 100%;
+	position: absolute;
+	left: 0;
+	text-align: center;
+	bottom: 0;
+	font-weight: bold;
+	color: rgba(7, 23, 35, 0.82);
+	background: rgba(176, 240, 247, 0.85);
+	width: 100%;
 }
 
-#cardWeb > div {
+#cardWeb>div {
 	text-align: center;
 	padding: 15px 0px 15px 0px;
 }
@@ -356,7 +367,7 @@ a:hover {
 .card ul li {
 	padding: 2px;
 	list-style-type: square;
-  color: rgba(15, 16, 17, 0.8);
+	color: rgba(15, 16, 17, 0.8);
 }
 
 .card ul a:link {
@@ -369,9 +380,8 @@ a:hover {
 }
 
 .card ul li span {
-    color: black;
+	color: black;
 }
-
 
 #contactDetails {
 	padding-left: 5vh;
@@ -385,13 +395,13 @@ a:hover {
 
 .iconsimg:hover {
 	-webkit-transition: all 100ms ease-in;
-    -webkit-transform: scale(1.2);
-    -ms-transition: all 100ms ease-in;
-    -ms-transform: scale(1.2);
-    -moz-transition: all 100ms ease-in;
-    -moz-transform: scale(1.2);
-    transition: all 100ms ease-in;
-    transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-ms-transition: all 100ms ease-in;
+	-ms-transform: scale(1.2);
+	-moz-transition: all 100ms ease-in;
+	-moz-transform: scale(1.2);
+	transition: all 100ms ease-in;
+	transform: scale(1.2);
 }
 
 #iconsHolder {
@@ -400,16 +410,17 @@ a:hover {
 
 #iconsHolder>div {
 	display: inline-block;
-    padding: 2vh;
-    text-align: center;
-    margin: 5px;
+	padding: 2vh;
+	text-align: center;
+	margin: 5px;
 }
+
 #iconsHolder>div div:nth-of-type(even) {
 	padding: 5px;
 }
 
 #contact #iconsHolder {
-    padding: 20px;
+	padding: 20px;
 }
 
 .contactImg {
@@ -418,19 +429,19 @@ a:hover {
 }
 
 .glyphicon {
-    font-size: large;
+	font-size: large;
 }
 
 #experience {
 	padding-top: 10vh;
-  padding-bottom: 10vh;
+	padding-bottom: 10vh;
 	width: 100%;
 	margin: 0 auto;
 }
 
 #experience ul {
 	margin: 0 auto;
-  width: 55%;
+	width: 55%;
 	/*	 list-style-type: decimal;  */
 }
 
@@ -449,7 +460,9 @@ a:hover {
 #expDetails {
 	margin: 0 auto;
 	width: 50%;
-	background: linear-gradient(to right, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to right, rgba(241, 231, 103, 1) 0%,
+		rgba(254, 182, 69, 1) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 #expDetails th {
@@ -473,35 +486,37 @@ a:hover {
 #expDesc li div {
 	font-size: smaller;
 	font-style: italic;
-
 }
 
 #skills {
 	padding-top: 10vh;
-    padding-bottom: 10vh;
+	padding-bottom: 10vh;
 	width: 100%;
 	margin: 0 auto;
 }
 
 .skillsPlace {
 	width: 65%;
-    margin: 0 auto;
-    background: linear-gradient(to right, rgba(254,255,232,1) 0%,rgba(214,219,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	margin: 0 auto;
+	background: linear-gradient(to right, rgba(254, 255, 232, 1) 0%,
+		rgba(214, 219, 191, 1) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .skillsPlace div.container-fluid {
 	width: 100%;
-    padding: 20px;
-    border-bottom: 8px solid rgba(0, 0, 0, 0.33);
+	padding: 20px;
+	border-bottom: 8px solid rgba(0, 0, 0, 0.33);
 }
 
 .skillSets {
 	display: inline-block;
-	padding: 6px;
-    background: rgba(93, 175, 247, 0.68);
-    color: #fff;
-    border-radius: 5px;
-    margin: 5px;
+	padding: 4px;
+	background: rgba(93, 175, 247, 0.68);
+	color: #202121;
+	border-radius: 5px;
+	margin: 5px;
+	font-weight: bold;
 }
 
 .skillType {
@@ -512,10 +527,14 @@ a:hover {
 .end {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ebf9+0,feffff+100 */
 	background: #d2ebf9; /* Old browsers */
-	background: -moz-linear-gradient(left,  #d2ebf9 0%, #feffff 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  #d2ebf9 0%,#feffff 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  #d2ebf9 0%,#feffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', endColorstr='#feffff',GradientType=1 ); /* IE6-9 */
+	background: -moz-linear-gradient(left, #d2ebf9 0%, #feffff 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #d2ebf9 0%, #feffff 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #d2ebf9 0%, #feffff 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9',
+		endColorstr='#feffff', GradientType=1); /* IE6-9 */
 	text-align: center;
 	margin: 0 auto;
 }
@@ -526,149 +545,132 @@ a:hover {
 }
 
 .end a:hover {
-    color: #00B8ED;
+	color: #00B8ED;
 }
 
 footer {
 	border-top: 3px solid #00B8ED;
-    box-shadow: 1px 1px 1px 1px #3091BB;
-    height: 100px;
-    background: rgb(10, 11, 12);
+	box-shadow: 1px 1px 1px 1px #3091BB;
+	height: 100px;
+	background: rgb(10, 11, 12);
 	text-align: center;
 	color: whitesmoke;
-    font-size: large;
-    padding: 5px;
+	font-size: large;
+	padding: 5px;
 }
 
 #share {
-    padding: 5px;
+	padding: 5px;
 }
 
 #share span {
-    display: inline-block;
-    vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 #share>span {
-    font-size: small;
+	font-size: small;
 }
 
 @media screen and (max-width: 1000px) {
-    #profileImage{
-        height: 25vh;
+	#profileImage {
+		height: 25vh;
 		width: 25vh;
-    	background-color: rgba(37, 18, 18, 0.15);
-    	border: 1px solid transparent;
-    	border-radius: 8vh;
-    }
-
-.section:nth-of-type(odd) {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+		background-color: rgba(37, 18, 18, 0.15);
+		border: 1px solid transparent;
+		border-radius: 8vh;
 	}
-
-    .section:nth-of-type(even) {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ebf9+0,feffff+100 */
-background: #d2ebf9; /* Old browsers */
-background: -moz-linear-gradient(top,  #d2ebf9 0%, #feffff 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #d2ebf9 0%,#feffff 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #d2ebf9 0%,#feffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
-
+	.section:nth-of-type(odd) {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+			endColorstr='#ededed', GradientType=0); /* IE6-9 */
 	}
-
-    #menuNav {
-    	width: initial;
-    }
-
-    #menuNav li {
-    	letter-spacing: 1px;
-    }
-
-    #menuNav a {
-        font-size: small;
-    }
-
-    .homeCenter {
+	.section:nth-of-type(even) {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ebf9+0,feffff+100 */
+		background: #d2ebf9; /* Old browsers */
+		background: -moz-linear-gradient(top, #d2ebf9 0%, #feffff 100%);
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #d2ebf9 0%, #feffff 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #d2ebf9 0%, #feffff 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9',
+			endColorstr='#feffff', GradientType=0); /* IE6-9 */
+	}
+	#menuNav {
+		width: initial;
+	}
+	#menuNav li {
+		letter-spacing: 1px;
+	}
+	#menuNav a {
+		font-size: small;
+	}
+	.homeCenter {
 		top: 18vh;
 	}
-
 	#card, #cardCloud {
 		width: initial;
 	}
-
 	#cardWeb {
 		width: initial;
-    	height: 350px;
-    	overflow-y: scroll;
+		height: 350px;
+		overflow-y: scroll;
 	}
-
 	#cardsText {
 		line-height: 25px;
 	}
-
 	.webProjs {
 		height: 75px;
-    	width: 115px;
+		width: 115px;
 	}
-
-    #homeDetails {
-    	font-size: medium;
-    	padding-top: 12vh;
-    }
-
-    #homeMain {
-    	font-size: x-large;
-    	padding-top: 2vh;
-    }
-
-    #homeMain p {
-    	font-size: 1.1em;
-    	letter-spacing: 4px;
+	#homeDetails {
+		font-size: medium;
+		padding-top: 12vh;
 	}
-
+	#homeMain {
+		font-size: x-large;
+		padding-top: 2vh;
+	}
+	#homeMain p {
+		font-size: 1.1em;
+		letter-spacing: 4px;
+	}
 	#homeMain div {
-    	font-size: medium;
+		font-size: medium;
 	}
-
 	#iconsHolder .homeIcons {
-    	font-size: 1.1em;
+		font-size: 1.1em;
 	}
-
-	#iconsHolder>div
-	{
-    	padding: 2px;
+	#iconsHolder>div {
+		padding: 2px;
 	}
-
-    #iconsHolder {
-        text-align: center;
-    }
-
-    #aboutDetails p {
-    	width: initial;
-    }
-
-    #courses {
-    	width: initial;
-    }
-
-    .skillsPlace {
-    	width: initial;
-    }
-
-    #expDetails {
-    	width: initial;
-    }
-
-    #expDetails th {
-    	padding: 10px;
-    }
-
-    #experience ul {
-    	width: initial;
-    }
+	#iconsHolder {
+		text-align: center;
+	}
+	#aboutDetails p {
+		width: initial;
+	}
+	#courses {
+		width: initial;
+	}
+	.skillsPlace {
+		width: initial;
+	}
+	#expDetails {
+		width: initial;
+	}
+	#expDetails th {
+		padding: 10px;
+	}
+	#experience ul {
+		width: initial;
+	}
 }
