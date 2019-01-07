@@ -94,7 +94,6 @@ portfolioApp.controller('profileCtrl', ['$scope', '$http', function($scope, $htt
 	/*$scope.pgCourses = ['Secore Programming','Cloud Computing','Web Data XML','Software Engineering','Wireless Networks','Distributed Systems','Design & Analysis of Algorithms','Computer Networks','Database Systems'];
     $scope.ugCourses = ['Algorithms','Java','NetworksI/II', 'Database'];*/
 
-<<<<<<< HEAD
 	$scope.contact = {
 			name: "Jagadish Shivanna",
 			phone: "682-582-3836",
@@ -141,54 +140,6 @@ portfolioApp.controller('profileCtrl', ['$scope', '$http', function($scope, $htt
 		/*
 		 */
 	});
-=======
-    $scope.contact = {
-    	name: "Jagadish Shivanna",
-    	phone: "+1-682-582-3836",
-    	email: "jagadish030@gmail.com",
-    	place: "Richmond, VA",
-    	linkedin: "www.linkedin.com/in/jaggisg",
-    	skype: "jaggi.sg11"
-    };
-
-    $scope.webProjUrl = "https://bitbucket.org/jaggi-sg/web-projects/src/";
-    $scope.cloudProjUrl = "https://bitbucket.org/jaggi-sg/cloud-computing-projects/src/";
-    $scope.home = "Bangalore, India";
-    $scope.livesin = "Richmond, VA";
-    $scope.aboutCurrent = "Seeking full-time positions as Software Engineer";
-    $scope.resume = "docs/jagadishshivanna.pdf";
-    $scope.aboutDetails = "Hi, I'm Jagadish Shivanna, Computer Science graduate from University of Texas, Arlington working as Developer at Capital One, Richmond VA. Just scroll through this page to know more about me, my skills and projects";
-
-   	$http.get('application.json').success(function(data) {
-     $scope.projects = [];
-     $scope.webProjs = [];
-     $scope.cloudProjs = [];
-     $scope.social = [];
-     $scope.skills = [];
-     angular.forEach (data.projects, function(value, key) {
-     	$scope.projects.push(value);
-     		}
-     	)
-     angular.forEach (data.webProjs, function(value, key) {
-     	$scope.webProjs.push(value);
-     		}
-     	)
-     angular.forEach (data.cloudProjs, function(value, key) {
-     	$scope.cloudProjs.push(value);
-     		}
-     	)
-     angular.forEach (data.social, function(value, key) {
-     	$scope.social.push(value);
-     		}
-     	)
-     angular.forEach (data.skills, function(value, key) {
-     	$scope.skills.push(value);
-     		}
-     	)
-    /*
-    */
-    });
->>>>>>> 4060d81bfca67722444cb84a8eba39a20069d1ea
 
 }]);
 
