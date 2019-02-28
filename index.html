@@ -71,8 +71,7 @@
 						<div>
 							<i class="fa fa-home fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;{{livesin}}
 						</div>
-						<div style="font-size: large">Software Developer | Computer
-							Science Masters Graduate</div>
+						<div>Software Developer | Computer Science Masters Graduate</div>
 					</div>
 				</div>
 			</div>
@@ -203,7 +202,7 @@
 				<table class="table" id="expDetails">
 					<tr>
 						<th rowspan="2">{{exp.no}}</th>
-						<td>{{exp.company}}</td>
+						<td><b>{{exp.company}}</b></td>
 						<td>{{exp.place}}</td>
 					</tr>
 					<tr>
@@ -213,13 +212,15 @@
 				</table>
 				<br />
 				<ul id="expDesc">
-					<li>{{exp.responsibilities}}</li>
 					<li ng-if="exp.team!=0">Clients:
-						<div ng-repeat="teams in exp.team" ng-if="exp.team!=0">{{teams}}</div>
+						<div ng-repeat="teams in exp.team" ng-if="exp.team!=0"><b>{{teams}}</b></div>
 					</li>
+					<li>{{exp.responsibilities}}</li>
 					<li ng-repeat="description in exp.desc" ng-if="exp.desc!=0">
 						{{description}}</li>
 				</ul>
+				<br/>
+				<p id="expTech"><b>Technologies: </b>{{exp.tech}}</p>
 				<br />
 				<hr>
 			</div>
@@ -267,7 +268,7 @@
 			<div class="card-columns" id="cardsColumn">
 				<div class="card card-block" ng-repeat="projs in projects" id="card">
 					<a href="{{projs.projUrl}}" target="_blank"><div>
-							<h4 class="card-title">{{projs.name}}</h4>
+							<h4 class="card-title"><b>{{projs.name}}</b></h4>
 						</div></a>
 
 					<ul class="card-text" id="cardsText">
@@ -280,7 +281,7 @@
 
 				<div class="card card-block" id="cardWeb">
 					<a href="{{webProjUrl}}" target="_blank"><div class="cardTitle">
-							<h4 class="card-title">Web Application Projects</h4>
+							<h4 class="card-title"><b>Web Application Projects</b></h4>
 						</div></a>
 					<div class="card-text">
 						<div ng-repeat="web in webProjs" id="imagesHolder">
@@ -296,7 +297,7 @@
 				<div class="card card-block" id="cardCloud">
 					<a href="{{cloudProjUrl}}" target="_blank"><div
 							class="cardTitle">
-							<h4 class="card-title">Cloud Computing Projects</h4>
+							<h4 class="card-title"><b>Cloud Computing Projects</b></h4>
 						</div></a>
 					<div class="card-text">
 						<div ng-repeat="cloud in cloudProjs">

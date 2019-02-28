@@ -49,12 +49,14 @@ portfolioApp.controller('profileCtrl', ['$scope', '$http', function($scope, $htt
 		this.responsibilities = responsibilities;
 	}
 
-	var exp1 = new expMenu(1, "Infosys Limited", "Bangalore, India", "Sep 2011", "Dec 2013", "System Engineer", ["Air Liquide", "Dupont"], "Trained on Java, Databases, J2EE, C++, Web technologies and Salesforce.com");
-	exp1.desc = ["Key skills gained: Java, SQL, PL/SQL, Javascript, Apex, Visualforce", "Certified Salesforce DEV401 Developer"];
+	var exp1 = new expMenu(1, "Infosys Limited", "Bangalore, India", "Sep 2011", "Dec 2013", "System Engineer", ["Air Liquide", "Dupont"],"Work on Salesforce CRM to manage users, accounts, opportunities");
+	exp1.desc = ["Worked on the complete migration of Air Liquide Healthcare SFDC instance","Use Salesforce SOAP API for database interface with salesforce","Develop apex classes/triggers using Apex and Visualforce","Create workflows, approvals, triggers, validation rules","Certified Salesforce DEV401 Developer"];
+	exp1.tech = "Java, Salesforce, Apex, Visualforce, SQL, Oracle, PL/SQL, HTML5, JavaScript, REST, SOAP"
 	// exp1.desc2 = ;
 
-	var exp2 = new expMenu(2, "Capital One", "Richmond, VA", "Sep 2016", "Current", "Developer",[], "Java, Spring, AWS, Docker, Kafka, MongoDB, Spark, AngularJS");
-	exp2.desc = ["Worked towards modernizing the Embossing platform in Cards to cloud","Design, develop, test, maintain applications to serve the purpose of modernizing"];
+	var exp2 = new expMenu(2, "Capital One", "Richmond, VA", "Sep 2016", "Current", "Developer",[],"Worked towards modernizing the Card Embossing applications to cloud");
+	exp2.desc = ["Develop highly scalable spring boot micro-services and deploy on AWS","Perform AMI rehydration of EC2 instances on East and West regions","Minimum impact traffic switch of applications across AWS regions","Use Apache Spark for cluster handling of data and to archive data across databases in MongoDB"];
+	exp2.tech = "Java, MongoDB, Docker, AWS, Mesos, Marathon, Kafka, Zookeeper, Spark, AngularJS, HTML5, JavaScript"
 	experience.push(exp2);
 	experience.push(exp1);
 
@@ -109,7 +111,7 @@ portfolioApp.controller('profileCtrl', ['$scope', '$http', function($scope, $htt
 	$scope.livesin = "Richmond, VA";
 	$scope.aboutCurrent = "Seeking full-time positions as Software Engineer";
 	$scope.resume = "docs/jagadishshivanna.pdf";
-	$scope.aboutDetails = "Hi, I'm Jagadish Shivanna, Computer Science graduate from University of Texas, Arlington working as Developer at Capital One, Richmond VA. Just scroll through this page to know more about me, my skills and projects";
+	$scope.aboutDetails = "Hi, I'm Jagadish Shivanna, Computer Science graduate from University of Texas, Arlington working as Developer at Capital One, Richmond VA. Scroll through this page to know more about me, my skills and projects";
 
 	$http.get('application.json').success(function(data) {
 		$scope.projects = [];
